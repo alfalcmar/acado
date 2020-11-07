@@ -292,6 +292,7 @@ ReturnValueList returnValueList[] =
 { RET_UNABLE_TO_EVALUATE_CONSTRAINTS,			"Evaluation of constraints failed", VS_VISIBLE },
 { RET_UNABLE_TO_INTEGRATE_SYSTEM,				"Integration of dynamic system failed. Try to adjust integrator tolerances using set( ABSOLUTE_TOLERANCE,<double> ) and set( INTEGRATOR_TOLERANCE,<double> )", VS_VISIBLE },
 { RET_NEED_TO_ACTIVATE_RTI,						"Feedback step requires real-time iterations to be activated. Use set( USE_REALTIME_ITERATIONS,YES ) to do so", VS_VISIBLE },
+{ RET_MAX_TIME_REACHED,							"Max time reached", VS_VISIBLE },
 
 /* CONIC SOLVER */
 { RET_CONIC_PROGRAM_INFEASIBLE,					"The optimization problem is infeasible", VS_VISIBLE },

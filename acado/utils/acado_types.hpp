@@ -368,6 +368,7 @@ enum OptionsName
 	PRINT_INTEGRATOR_PROFILE,
 	FEASIBILITY_CHECK,
 	MAX_NUM_ITERATIONS,
+	MAX_TIME,
 	KKT_TOLERANCE,
 	KKT_TOLERANCE_SAFEGUARD,
 	LEVENBERG_MARQUARDT,
@@ -1050,6 +1051,7 @@ CONVERGENCE_NOT_YET_ACHIEVED,					/**< convergence not yet achieved. */
 RET_NLP_INIT_FAILED, 							/**< Initialization of NLP solver failed. */
 RET_NLP_STEP_FAILED, 							/**< Step of NLP solver failed. */
 RET_NLP_SOLUTION_FAILED,						/**< NLP solution failed. */
+RET_MAX_TIME_REACHED,							/**< NLP max time reached */
 RET_INITIALIZE_FIRST, 							/**< Object needs to be initialized first. */
 RET_SOLVER_NOT_SUTIABLE_FOR_REAL_TIME_MODE,		/**< The specified NLP solver is not designed for a real-time mode. */
 RET_ILLFORMED_HESSIAN_MATRIX,					/**< Hessian matrix is too ill-conditioned to continue. */

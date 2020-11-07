@@ -40,6 +40,7 @@
 BEGIN_NAMESPACE_ACADO
 
 // OptimizationAlgorithm
+const double    defaultMaxTime = 20;
 const int 		defaultMaxNumIterations = 200;										/**< Default value for maximum number of iterations of the NLP solver (possible values: any non-negative integer). */
 const double 	defaultKKTtolerance = 1.0e-6;										/**< Default value for the KKT tolerance used as termination criterium by the NLP solver (possible values: any positive real number). */
 const double 	defaultKKTtoleranceSafeguard = 1.0;									/**< Default value for safeguarding the KKT tolerance as termination criterium for the NLP solver (possible values: any non-negative real number). */

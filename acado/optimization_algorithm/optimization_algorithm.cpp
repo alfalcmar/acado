@@ -138,6 +138,7 @@ returnValue OptimizationAlgorithm::solve( ){
 returnValue OptimizationAlgorithm::setupOptions( )
 {
 	// add NLP solver options
+	addOption( MAX_TIME					   , defaultMaxTime					);
 	addOption( MAX_NUM_ITERATIONS          , defaultMaxNumIterations        );
 	addOption( KKT_TOLERANCE               , defaultKKTtolerance            );
 	addOption( KKT_TOLERANCE_SAFEGUARD     , defaultKKTtoleranceSafeguard   );
