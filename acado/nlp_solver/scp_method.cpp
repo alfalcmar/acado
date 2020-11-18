@@ -382,6 +382,7 @@ returnValue SCPmethod::feedbackStep(	const DVector& x0_,
 	if ( bandedCPsolver->solve( bandedCP ) != SUCCESSFUL_RETURN )
 		return ACADOERROR( RET_NLP_STEP_FAILED );
 
+
 // 	bandedCP.deltaX.print();
 	
 	if ( (PrintLevel)printLevel >= HIGH ) 

@@ -120,6 +120,10 @@ returnValue OptimizationAlgorithm::solve( ){
   			return ACADOERROR( RET_MAX_NUMBER_OF_STEPS_EXCEEDED );
       }
     }
+		else if(returnvalue == RET_MAX_TIME_REACHED)
+	{
+		return ACADOERROR(RET_MAX_TIME_REACHED);
+	}
 		else
     {
 			return ACADOERROR( RET_OPTALG_SOLVE_FAILED );
