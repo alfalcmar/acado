@@ -8,4 +8,4 @@ make
 
 # set bashrc
 echo "
-source $WORKSPACE_PATH/devel/setup.bash" >> ~/.bashrc
+source $SCRIPT_PATH/build/acado_env.sh" >> ~/.bashrc
