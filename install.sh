@@ -5,6 +5,7 @@ mkdir build
 cd $SCRIPT_PATH/build
 cmake ..
 make
+sudo make install
 
 
 # set bashrc/zshrc
