@@ -286,12 +286,20 @@ returnValue SCPmethod::solve(	const DVector &x0_,
 		if( returnvalue == CONVERGENCE_ACHIEVED )
 			break;
 
+<<<<<<< Updated upstream
 		if( returnvalue != CONVERGENCE_NOT_YET_ACHIEVED )
 			return ACADOERROR( RET_NLP_SOLUTION_FAILED );
 		
 		// std::cout<<"clock: "<<solver_clock.getTime()<<"max time: "<<max_time<<std::endl;
+=======
+		std::cout<<"clock: "<<solver_clock.getTime()<<"max time: "<<max_time<<std::endl;
+>>>>>>> Stashed changes
 		if( max_time<solver_clock.getTime())
 			return ACADOERROR( RET_MAX_TIME_REACHED);
+
+		if( returnvalue != CONVERGENCE_NOT_YET_ACHIEVED )
+			return ACADOERROR( RET_NLP_SOLUTION_FAILED );
+		
 	}
 
 	replot( PLOT_AT_END );
